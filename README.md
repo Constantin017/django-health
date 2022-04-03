@@ -8,6 +8,9 @@ Request by HTTPie
 ```bash
 http http://localhost:8000/health/ Accept:application/json
 ```
+```bash
+http http://localhost:8000/health/?format=json
+```
 
 Response by HTTPie
 ```bash
