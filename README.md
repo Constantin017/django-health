@@ -1,6 +1,10 @@
 # Django Health
 
-## How to health check on Django?
+## Result ?
+
+
+
+## How to add django health check feature ?
 
 1. On the project need to be installed package:
 
@@ -49,6 +53,6 @@ urlpatterns = [
 python manage.py migrate
 ```
 
-## More about this python package
+## More about this python django package
 
-Detail information on link: https://pypi.org/project/django-health-check/
+Detail information by link: https://pypi.org/project/django-health-check/
