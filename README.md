@@ -2,7 +2,11 @@
 
 ## Result ?
 
-
+- /health
+- /health/db
+- /health/cache
+- /health/storage
+- /health/migrate
 
 ## How to add django health check feature ?
 
@@ -43,7 +47,7 @@ INSTALLED_APPS = [
 ```python
 urlpatterns = [
     # ...
-    url(r'^ht/', include('health_check.urls')),
+    path('health/', include('health_check.urls')),
 ]
 ```
 
