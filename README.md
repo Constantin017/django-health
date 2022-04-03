@@ -2,11 +2,11 @@
 
 ## Result ?
 
-- /health
-- /health/db
-- /health/cache
-- /health/storage
-- /health/migrate
+- 200 | 500 <= /health
+- 200 | 500 <= /health/db
+- 200 | 500 <= /health/cache
+- 200 | 500 <= /health/storage
+- 200 | 500 <= /health/migrate
 
 ## How to add django health check feature ?
 
