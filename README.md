@@ -8,6 +8,33 @@
 - 200 | 500 <= /health/storage
 - 200 | 500 <= /health/migrate
 
+Request by HTTPie
+```bash
+http http://localhost:8000/health/ Accept:application/json
+```
+
+Response by HTTPie
+```bash
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate, private
+Content-Length: 147
+Content-Type: application/json
+Cross-Origin-Opener-Policy: same-origin
+Date: Sun, 03 Apr 2022 16:39:37 GMT
+Expires: Sun, 03 Apr 2022 16:39:37 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.10.0
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "Cache backend: default": "working",
+    "DatabaseBackend": "working",
+    "DefaultFileStorageHealthCheck": "working",
+    "MigrationsHealthCheck": "working"
+}
+```
+
 ## How to add django health check feature ?
 
 1. On the project need to be installed package:
