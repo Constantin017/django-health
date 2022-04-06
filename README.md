@@ -5,6 +5,7 @@
 - 200 | 500 <= /health
 
 Request by HTTPie
+
 ```bash
 http http://localhost:8000/health/ Accept:application/json
 ```
@@ -77,10 +78,16 @@ urlpatterns = [
 ]
 ```
 
-4. If we using DB check need to do migration.
+4. If we using DB then you need to do migration.
 
 ```bash
-python manage.py migrate
+cd src && python manage.py migrate
+```
+
+Or using make unix util on root
+
+```bash
+make migrate
 ```
 
 ## More about this python django package
